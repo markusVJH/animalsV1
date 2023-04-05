@@ -1,0 +1,52 @@
+.card {
+  height: 20rem;
+  width: 15rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  position: relative;
+  text-align: center;
+  transition: 0.1s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.imgContainer {
+  height: 60%;
+  background-color: black;
+  border-radius: 10px 10px 0px 0px;
+  filter: grayscale(70%);
+  transition: 0.1s ease-in-out;
+}
+.card:hover .imgContainer {
+  filter: grayscale(0%);
+}
+.removeBtn {
+  position: absolute;
+  top: -10px;
+  right: -15px;
+}
+.likes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.name {
+  text-transform: capitalize;
+}
+.likesValue {
+  margin-left: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+button {
+  border-style: none;
+  background-color: transparent;
+  transition: 0.1s ease-in-out;
+}
+button:hover {
+  transform: scale(1.5);
+}
+button:active {
+  filter: brightness(2);
+}

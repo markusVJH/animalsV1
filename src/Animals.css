@@ -1,0 +1,6 @@
+.cards {
+  background-color: rgb(220, 220, 220);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
