@@ -11,8 +11,10 @@ const searchFilter = props.data.filter(animal => {
 
   return (
     <div>
+      <header>
       <h2>Animals {props.data.length}</h2>
      <Search searchHandler={props.searchHandler} />
+     </header>
     <div className="cards">
       {searchFilter.map((item) => <Card
       key={item.name}

@@ -9,8 +9,7 @@ const Card = (props) => {
 
   return (
     <div className="card">
-      <div className="imgContainer" style={{ background: `url(${imgUrl}) center/cover` }}>
-      </div>
+      <div className="imgContainer" style={{ background: `url(${imgUrl}) center/cover` }}></div>
       <h3 className="name">{props.name}</h3>
       <div className="likes">
   <button onClick={props.onDislike}><FaThumbsDown size="25px" color="gray"/></button>
