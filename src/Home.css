@@ -1,0 +1,18 @@
+.home {
+  display: flex;
+}
+.select {
+  width: 50%;
+  display: flex;
+  text-align: center;
+  height: 30rem;
+}
+h1 {
+  color: white;
+}
+.select:nth-child(1) {
+  background: url(https://source.unsplash.com/500x400/?animals) center/cover;
+}
+.select:nth-child(2) {
+  background: url(https://source.unsplash.com/500x400/?birds) center/cover;
+}
