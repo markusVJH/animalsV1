@@ -5,19 +5,14 @@ import { Link } from "react-router-dom";
 const Home = () => {
     return (
       <div className="home">
-        <div className="select">
-          <Link to="/Animals">
+        <Link to="/Animals" className="link select">
             <h1>Animals</h1>
-          </Link>
-        </div>
-        <div className="select">
-          <Link to="/Birds">
+        </Link>
+        <Link to="/Birds" className="link select">
             <h1>Birds</h1>
-          </Link>
-        </div>
+        </Link>
       </div>
     );
-  };
-
+};
 
 export default Home;

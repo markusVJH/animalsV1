@@ -1,0 +1,7 @@
+.about {
+  color: white;
+  height: 50rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

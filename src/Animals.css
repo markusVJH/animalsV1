@@ -1,12 +1,16 @@
 .cards {
+  padding: 2rem;
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
 }
-header {
+.top {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 10rem;
+  flex-direction: column;
+}
+h2 {
+  color: white;
 }

@@ -11,18 +11,18 @@ const searchFilter = props.data.filter(animal => {
 
   return (
     <div>
-      <header>
-      <h2>Animals {props.data.length}</h2>
+      <div className="top">
+      <h2>Animals</h2>
      <Search searchHandler={props.searchHandler} />
-     </header>
+      </div>
     <div className="cards">
       {searchFilter.map((item) => <Card
       key={item.name}
       name={item.name} 
       likes={item.likes} 
-      onRemove={()=>props.removeHandler(item.name)}
-      onLike={()=>props.likesHandler(item.name, 'plus')}
-      onDislike={()=>props.likesHandler(item.name, 'minus')}/>)}
+      onRemove={()=>props.removeHandler(item.name, 'animals')}
+      onLike={()=>props.likesHandler(item.name, 'plus', 'animals')}
+      onDislike={()=>props.likesHandler(item.name, 'minus', 'animals')}/>)}
     </div>
     </div>
   );

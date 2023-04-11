@@ -3,7 +3,7 @@ import './Search.css';
 
 const Search = (props) => {
   return (
-   <input onChange={props.searchHandler}/>
+   <input onChange={props.searchHandler} placeholder="search :)"/>
   );
 };
 
