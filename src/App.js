@@ -1,13 +1,14 @@
 import React, { Component, useState, useEffect }from 'react';
-import { animals, birds } from "./animalsList";
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
+import './App.css';
+
 import Animals from './pages/Animals/Animals';
 import Birds from './pages/Animals/Birds';
-import './App.css';
-import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import Home from './pages/Home/Home';
 import Navigation from './components/Navigation/Navigation';
 import About from './pages/About/About';
 
+import { animals, birds } from "./animalsList";
 
 class App extends Component {
   state = {
@@ -73,8 +74,8 @@ render() {
             likesHandler={this.likesHandler}
             searchHandler={this.searchHandler}
             searchInput={this.state.searchInput}
-          />}activeClassName='active'/>
-          <Route path="/About" element={<About/>}/>
+          />}/>
+          <Route path="/about" element={<About/>}/>
         </Routes>
     </BrowserRouter>
   );

@@ -1,5 +1,6 @@
 input {
   height: 2rem;
   border-radius: 5px;
-  border-style: solid;
+  border-style: none;
+  width: 10rem;
 }

@@ -31,10 +31,10 @@ h1 {
   padding: 0.5rem;
 }
 .select:nth-child(1) {
-  background: url(https://source.unsplash.com/600x1000/?animals) no-repeat
+  background: url(https://source.unsplash.com/600x800/?animals) no-repeat
     center/cover;
 }
 .select:nth-child(2) {
-  background: url(https://source.unsplash.com/600x1000/?birds) no-repeat
+  background: url(https://source.unsplash.com/600x800/?birds) no-repeat
     center/cover;
 }

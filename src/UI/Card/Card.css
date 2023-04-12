@@ -1,7 +1,7 @@
 .card {
   height: 20rem;
   width: 15rem;
-  background: linear-gradient(to left, #8bfbff, #ffffff);
+  background: white;
   border-radius: 15px;
   position: relative;
   text-align: center;
@@ -24,6 +24,7 @@
   position: absolute;
   top: -10px;
   right: -15px;
+  color: white;
 }
 .likes {
   display: flex;

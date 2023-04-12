@@ -5,7 +5,7 @@ import { IoMdCloseCircle } from "react-icons/io";
 
 
 const Card = (props) => {
-  const imgUrl = `https://source.unsplash.com/500x400/?${props.name}`;
+  const imgUrl = `https://source.unsplash.com/250x200/?${props.name}`;
 
   return (
     <div className="card">
@@ -26,7 +26,7 @@ const Card = (props) => {
   )}
   <button onClick={props.onLike}><FaThumbsUp color="green" size= "25px"/></button>
 </div>
-      <button className="removeBtn" onClick={props.onRemove}><IoMdCloseCircle color="linear-gradient(to bottom right, #ff0000, #ffffff)"size= "2.5rem"/></button>
+      <button className="removeBtn" onClick={props.onRemove}><IoMdCloseCircle size= "2.5rem"/></button>
     </div>
   );
 };

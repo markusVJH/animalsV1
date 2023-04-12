@@ -14,9 +14,9 @@ const searchFilter = props.data.filter(animal => {
   return (
     <div>
       <div className="top">
-      <h2>Animals</h2>
-<GoTop/>
-     <Search searchHandler={props.searchHandler} />
+        <h2>Animals</h2>
+        <GoTop/>
+        <Search searchHandler={props.searchHandler} />
       </div>
     <div className="cards">
       {searchFilter.map((item) => <Card
