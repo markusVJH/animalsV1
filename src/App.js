@@ -5,8 +5,8 @@ import Birds from './pages/Birds';
 import './App.css';
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import Home from './pages/Home';
-import Navigation from './components/Navigation';
-import About from './pages/About';
+import Navigation from './components/Navigation/Navigation';
+import About from './pages/About/About';
 
 
 class App extends Component {
