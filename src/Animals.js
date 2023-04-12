@@ -2,6 +2,8 @@ import React from 'react';
 import Card from './Card';
 import './Animals.css';
 import Search from './Search';
+import GoTop from './Top';
+
 
 const Animals = (props) => {
 const searchFilter = props.data.filter(animal => {
@@ -13,6 +15,7 @@ const searchFilter = props.data.filter(animal => {
     <div>
       <div className="top">
       <h2>Animals</h2>
+<GoTop/>
      <Search searchHandler={props.searchHandler} />
       </div>
     <div className="cards">

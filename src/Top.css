@@ -1,0 +1,13 @@
+.goTop {
+  background-color: white;
+  border-radius: 100%;
+  height: 3rem;
+  width: 3rem;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 2;
+}
+.goTop:hover {
+  transform: scale(1.05);
+}

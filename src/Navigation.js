@@ -8,22 +8,22 @@ const Navigation = (props) => {
       <nav>
         <ul>
           <li>
-            <NavLink to="/" className="link">
+            <NavLink to="/" className="link" activeclassname='active'>
               Home
             </NavLink>
           </li>
           <li>
-            <NavLink to="/animals" className="link">
+            <NavLink to="/animals" className="link" activeclassname='active'>
               Animals ({props.animalsCount})
             </NavLink>
           </li>
           <li>
-            <NavLink to="/birds" className="link">
+            <NavLink to="/birds" className="link" activeclassname='active'>
               Birds ({props.birdsCount})
             </NavLink>
           </li>
           <li>
-            <NavLink to="/about" className="link">
+            <NavLink to="/about" className="link" activeclassname='active'>
               About
             </NavLink>
           </li>

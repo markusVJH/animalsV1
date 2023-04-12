@@ -12,3 +12,6 @@ ul {
 body {
   background-color: rgb(0, 59, 82);
 }
+.active {
+  color: yellow;
+}

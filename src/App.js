@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useState, useEffect }from 'react';
 import { animals, birds } from "./animalsList";
 import Animals from './Animals';
 import Birds from './Birds';
@@ -8,12 +8,14 @@ import Home from './Home';
 import Navigation from './Navigation';
 import About from './About';
 
+
 class App extends Component {
   state = {
     animals: animals,
     birds: birds,
     searchInput: ''
-  }
+  };
+
   removeHandler = (name, type) => {
   const updatedArray = this.state.animals.filter(animal => animal.name !== name)
   this.setState({
@@ -43,7 +45,15 @@ searchHandler = (e) => {
 this.setState({
   searchInput: e.target.value
 })
+
+const [data, setLikes] = useState([]);
+  
+useEffect(() => {
+  localStorage.setItem('dataKey', JSON.stringify(data));
+}, [data]);
+
 }
+
 render() {
   return (
     <BrowserRouter>
@@ -63,7 +73,7 @@ render() {
             likesHandler={this.likesHandler}
             searchHandler={this.searchHandler}
             searchInput={this.state.searchInput}
-          />}/>
+          />}activeClassName='active'/>
           <Route path="/About" element={<About/>}/>
         </Routes>
     </BrowserRouter>
