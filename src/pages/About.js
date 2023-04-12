@@ -4,7 +4,7 @@ import './About.css';
 const About = () => {
   return (
     <div className="about">
-      About will be here xd
+      This is a school project where the goal was to make an 'Animals app' that meets certain requirements.
     </div>
   );
 };

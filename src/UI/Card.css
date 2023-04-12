@@ -1,7 +1,7 @@
 .card {
   height: 20rem;
   width: 15rem;
-  background: linear-gradient(to top, #8aebff, #ffffff);
+  background: linear-gradient(to left, #8bfbff, #ffffff);
   border-radius: 15px;
   position: relative;
   text-align: center;

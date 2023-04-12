@@ -1,8 +1,8 @@
 import React from 'react';
-import Card from './Card';
+import Card from '../UI/Card';
 import './Animals.css';
-import Search from './Search';
-import GoTop from './Top';
+import Search from '../UI/Search';
+import GoTop from '../UI/Top';
 
 
 const Animals = (props) => {

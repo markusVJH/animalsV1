@@ -1,12 +1,12 @@
 import React, { Component, useState, useEffect }from 'react';
 import { animals, birds } from "./animalsList";
-import Animals from './Animals';
-import Birds from './Birds';
+import Animals from './pages/Animals';
+import Birds from './pages/Birds';
 import './App.css';
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
-import Home from './Home';
-import Navigation from './Navigation';
-import About from './About';
+import Home from './pages/Home';
+import Navigation from './components/Navigation';
+import About from './pages/About';
 
 
 class App extends Component {
@@ -46,11 +46,11 @@ this.setState({
   searchInput: e.target.value
 })
 
-const [data, setLikes] = useState([]);
+/* const [data, setLikes] = useState([]);
   
 useEffect(() => {
   localStorage.setItem('dataKey', JSON.stringify(data));
-}, [data]);
+}, [data]); */
 
 }
 

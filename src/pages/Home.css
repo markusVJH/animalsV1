@@ -1,14 +1,24 @@
 .home {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
 }
 .select {
   width: 50%;
   display: flex;
   justify-content: center;
-  height: 90vh;
+  height: 89vh;
   border-style: solid;
   border-width: 8px;
   border-color: rgb(0, 59, 82);
+  transition: 0.2s ease-in-out;
+}
+.select:hover {
+  border-color: rgb(0, 92, 129);
 }
 .link {
   text-decoration: none;
@@ -21,10 +31,10 @@ h1 {
   padding: 0.5rem;
 }
 .select:nth-child(1) {
-  background: url(https://source.unsplash.com/1000x800/?animals) no-repeat
+  background: url(https://source.unsplash.com/600x1000/?animals) no-repeat
     center/cover;
 }
 .select:nth-child(2) {
-  background: url(https://source.unsplash.com/1000x800/?birds) no-repeat
+  background: url(https://source.unsplash.com/600x1000/?birds) no-repeat
     center/cover;
 }
