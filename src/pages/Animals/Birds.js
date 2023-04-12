@@ -1,7 +1,7 @@
 import React from 'react';
-import Card from '../UI/Card';
+import Card from '../../UI/Card/Card';
 import './Animals.css';
-import Search from '../UI/Search';
+import Search from '../../UI/Search/Search';
 
 const Birds = (props) => {
 const searchFilter = props.data.filter(bird => {

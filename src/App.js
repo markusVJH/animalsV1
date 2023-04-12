@@ -1,10 +1,10 @@
 import React, { Component, useState, useEffect }from 'react';
 import { animals, birds } from "./animalsList";
-import Animals from './pages/Animals';
-import Birds from './pages/Birds';
+import Animals from './pages/Animals/Animals';
+import Birds from './pages/Animals/Birds';
 import './App.css';
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
-import Home from './pages/Home';
+import Home from './pages/Home/Home';
 import Navigation from './components/Navigation/Navigation';
 import About from './pages/About/About';
 
