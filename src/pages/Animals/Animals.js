@@ -23,7 +23,7 @@ const searchFilter = props.data.filter(animal => {
       key={item.name}
       name={item.name} 
       likes={item.likes} 
-      onRemove={()=>props.removeHandler(item.name, 'animals')}
+      onRemove={()=>props.removeHandler(item.name, 'animals', 'animals')}
       onLike={()=>props.likesHandler(item.name, 'plus', 'animals')}
       onDislike={()=>props.likesHandler(item.name, 'minus', 'animals')}/>)}
     </div>

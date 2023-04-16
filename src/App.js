@@ -1,4 +1,4 @@
-import React, { Component, useState, useEffect }from 'react';
+import React, { Component }from 'react';
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import './App.css';
 
@@ -17,12 +17,12 @@ class App extends Component {
     searchInput: ''
   };
 
-  removeHandler = (name, type) => {
-  const updatedArray = this.state.animals.filter(animal => animal.name !== name)
-  this.setState({
-    [type]: updatedArray
-  })
-  }
+  removeHandler = (name, type, componentType) => {
+    const updatedArray = this.state[componentType].filter(animal => animal.name !== name);
+    this.setState({
+      [type]: updatedArray
+    });
+  };
   likesHandler = (name, action, type) => {
     this.setState((prevState) => {
       const updatedArray = prevState[type].map((animal)=> {
@@ -46,13 +46,6 @@ searchHandler = (e) => {
 this.setState({
   searchInput: e.target.value
 })
-
-/* const [data, setLikes] = useState([]);
-  
-useEffect(() => {
-  localStorage.setItem('dataKey', JSON.stringify(data));
-}, [data]); */
-
 }
 
 render() {
