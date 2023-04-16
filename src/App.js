@@ -33,6 +33,7 @@ class App extends Component {
       this.setState(prevState => ({
         birds: prevState.birds.map(bird => ({
           ...bird,
+          name: bird.name.toLowerCase(),
           likes: birdsLikes[bird.name] || bird.likes
         }))
       }));
@@ -82,7 +83,7 @@ return {
   }
 searchHandler = (e) => {
 this.setState({
-  searchInput: e.target.value
+  searchInput: e.target.value.toLowerCase()
 })
 }
 
