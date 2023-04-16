@@ -17,6 +17,44 @@ class App extends Component {
     searchInput: ''
   };
 
+  componentDidMount() {
+    const animalsLikes = JSON.parse(localStorage.getItem('animalsLikes'));
+    if (animalsLikes) {
+      this.setState(prevState => ({
+        animals: prevState.animals.map(animal => ({
+          ...animal,
+          likes: animalsLikes[animal.name] || animal.likes
+        }))
+      }));
+    }
+
+    const birdsLikes = JSON.parse(localStorage.getItem('birdsLikes'));
+    if (birdsLikes) {
+      this.setState(prevState => ({
+        birds: prevState.birds.map(bird => ({
+          ...bird,
+          likes: birdsLikes[bird.name] || bird.likes
+        }))
+      }));
+    }
+  }
+
+  componentDidUpdate() {
+    localStorage.setItem('animalsLikes', JSON.stringify(
+      this.state.animals.reduce((likes, animal) => ({
+        ...likes,
+        [animal.name]: animal.likes
+      }), {})
+    ));
+
+    localStorage.setItem('birdsLikes', JSON.stringify(
+      this.state.birds.reduce((likes, bird) => ({
+        ...likes,
+        [bird.name]: bird.likes
+      }), {})
+    ));
+  }
+
   removeHandler = (name, type, componentType) => {
     const updatedArray = this.state[componentType].filter(animal => animal.name !== name);
     this.setState({
